@@ -1,0 +1,41 @@
+{
+  "name": "realestate-whatsapp-bot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "deploy:functions": "firebase deploy --only functions",
+    "emulate": "firebase emulators:start --only functions,firestore",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "firebase",
+    "real-estate"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "WhatsApp Bot for real estate transaction management",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "cors": "^2.8.5",
+    "docusign-esign": "^8.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "firebase": "^11.6.0",
+    "firebase-admin": "^13.2.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "firebase-functions-test": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
