@@ -7,10 +7,10 @@ import streamlit as st
 st.set_page_config(page_title="Narrative Control Dashboard", layout="wide")
 st.title("מי שולט בנרטיב? – השוואה בין קבוצות")
 
-posts_path = st.sidebar.text_input("Analyzed posts CSV", "social_narrative_pipeline/analyzed_posts.csv")
-profiles_path = st.sidebar.text_input("User profiles CSV", "social_narrative_pipeline/user_profiles.csv")
-user_delta_path = st.sidebar.text_input("User delta CSV (optional)", "social_narrative_pipeline/user_weekly_delta.csv")
-theme_delta_path = st.sidebar.text_input("Theme delta CSV (optional)", "social_narrative_pipeline/theme_weekly_delta.csv")
+posts_path = st.sidebar.text_input("Analyzed posts CSV", "standalone/social_narrative_pipeline/analyzed_posts.csv")
+profiles_path = st.sidebar.text_input("User profiles CSV", "standalone/social_narrative_pipeline/user_profiles.csv")
+user_delta_path = st.sidebar.text_input("User delta CSV (optional)", "standalone/social_narrative_pipeline/user_weekly_delta.csv")
+theme_delta_path = st.sidebar.text_input("Theme delta CSV (optional)", "standalone/social_narrative_pipeline/theme_weekly_delta.csv")
 
 try:
     posts = pd.read_csv(posts_path)
