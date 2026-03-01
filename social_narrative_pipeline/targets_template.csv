@@ -1,0 +1,5 @@
+platform,handle,group_label,source_type,is_verified,followers_estimate,is_active,agenda_tag,priority_score,notes
+x,example_regime_1,regime_supporter,person,unknown,0,unknown,pro_regime,0,replace_with_real_handle
+x,example_opposition_1,opposition,person,unknown,0,unknown,opposition,0,replace_with_real_handle
+telegram,example_regime_channel,regime_supporter,channel,unknown,0,unknown,pro_regime,0,replace_with_real_handle
+telegram,example_opposition_channel,opposition,channel,unknown,0,unknown,opposition,0,replace_with_real_handle
